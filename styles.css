@@ -7,6 +7,24 @@ body {
   background-color: #ff66ff;
 }
 
+
+.banner-back {
+  width: 100%;
+  height: 150px;
+  background-color: #ff88ff
+}
+
+.banner-name {
+  text-align: center;
+  line-height: 150px;
+  font-size: 40px;
+  font-family: "Brush Script MT";
+}
+
+.banner-word {
+  padding: 0 20px;
+}
+
 .wrapper {
   margin: 0 auto 0 60px;
   width: 1000px;
@@ -16,10 +34,6 @@ nav {
   width: 100%;
   height: 70px;
   background-color: #00e8ff;
-}
-
-.titulo {
-  margin-left: 100px;
 }
 
 .index-menu {
@@ -32,7 +46,6 @@ nav {
 }
 
 .menu a {
-  list-style-type: none;
   display: inline-block;
   float: left;
   line-height: 70px;
