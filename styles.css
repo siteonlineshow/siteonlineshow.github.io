@@ -120,6 +120,8 @@ body {
   line-height: 150px;
   font-size: 40px;
   font-family: "Brush Script MT";
+  font-weight: 400;
+  text-shadow: 2px 2px 8px #ff55ff;
 }
 
 .banner-word {
