@@ -109,7 +109,6 @@ body {
   background-color: #ff66ff;
 }
 
-
 .banner-back {
   width: 100%;
   height: 150px;
@@ -160,6 +159,20 @@ header {
   background-color: yellow;
 }
 
+.button {
+  padding: 20px;
+}
+
+button {
+  border: none;
+  padding: 15px 25px;
+  cursor: none;
+  background-color: #00e8ff
+}
+
+button:hover {
+  background-color: #ffbeff;
+}
 
 h1 {
   font-family: arial;
