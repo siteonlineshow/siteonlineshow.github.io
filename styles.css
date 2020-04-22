@@ -379,4 +379,12 @@ article ul li {
     margin: 40px 20px;
     text-transform: uppercase;
   }
+
+  .patch {
+    margin-top: 20px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+  }
 }
