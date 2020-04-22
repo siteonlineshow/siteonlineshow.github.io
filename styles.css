@@ -160,7 +160,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #00e8ff;
+  background-color: #50b3fb;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
@@ -181,6 +181,15 @@ header {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.index-menu {
+  font-family: "Brush Script MT";
+  font-weight: 400;
+  text-shadow: 2px 2px 8px #ff55ff;
+  font-size: 30px !important;
+  line-height: 0;
+  padding: 35px 20px !important;
 }
 
 /*BANNER*/
