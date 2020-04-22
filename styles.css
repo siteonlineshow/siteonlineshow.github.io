@@ -184,7 +184,7 @@ header {
 }
 
 .index-menu {
-  font-family: "Brush Script MT";
+  font-family: 'Lobster', cursive;  
   font-weight: 400;
   text-shadow: 2px 2px 8px #ff55ff;
   font-size: 30px !important;
@@ -257,7 +257,7 @@ header {
   text-align: center;
   line-height: 150px;
   font-size: 40px;
-  font-family: "Brush Script MT";
+  font-family: 'Lobster', cursive;
   font-weight: 400;
   text-shadow: 2px 2px 8px #ff55ff;
 }
