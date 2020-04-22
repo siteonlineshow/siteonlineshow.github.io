@@ -10,10 +10,17 @@
     <header>
       <nav>
         <div class="menu">
-          <a href="index.html" class="active index-menu">Início</a></li>
-          <a href="pag2.html">Ciência</a></li>
-          <a href="pag3.html">Arte</a>
-          <a href="https://thirh.github.io/" target="_blank">LEGO Batman 3</a></li>
+          <a href="index.html" class="active index-menu">Início</a>
+          <div class="dropdown">
+            <button class="dropbtn">Categorias
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="pag2.html" class="categoria">Ciência</a>
+              <a href="pag3.html" class="categoria">Arte</a>
+            </div>
+          </div>
+          <a href="https://thirh.github.io/" target="_blank">LEGO Batman 3</a>
         </div>
       </nav>
     </header>
@@ -24,7 +31,7 @@
         </div>
       </div>
       <div class="button" style="text-align: center">
-        <button type="button" onclick="alert('Site Incompleto')">Estado Atual do Site</button>
+        <button type="button" class="estado-site" onclick="alert('Site Incompleto')">Estado Atual do Site</button>
       </div>
       <div class="wrapper">
         <article>
