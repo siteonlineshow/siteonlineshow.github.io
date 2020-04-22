@@ -184,7 +184,7 @@ header {
 }
 
 .index-menu {
-  font-family: 'Lobster', cursive;  
+  font-family: 'Lobster', cursive;
   font-weight: 400;
   text-shadow: 2px 2px 8px #ff55ff;
   font-size: 30px !important;
@@ -266,11 +266,7 @@ header {
   padding: 0 20px;
 }
 
-.titulo {
-  line-height: 70px;
-  font-family: arial;
-  text-align: center;
-}
+/*INDEX*/
 
 .button {
   padding: 20px;
@@ -285,6 +281,10 @@ header {
 
 button:hover {
   background-color: #ffbeff;
+}
+
+.description {
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -318,6 +318,8 @@ h1:hover + p + div + p {
   text-align: center;
   display: none;
   text-transform: uppercase;
+  margin: 20px 0 0;
+  line-height: 20px;
 }
 
 .wrapper {
@@ -349,4 +351,24 @@ h1:hover + p + div + p {
     width: 350px;
     border: 2px solid #ffbeff;
   }
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 0;
+  margin: 40px 250px 40px;
+}
+
+.patch {
+  padding: 10px;
+  margin: 30px 0 10px;
+  background-color: #ff55ff;
+}
+
+article ul li {
+  list-style: none;
+  background-color: #ff77ff;
+  padding: 10px;
+  margin-bottom: 1px;
 }
