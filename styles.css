@@ -192,7 +192,7 @@ header {
   padding: 35px 20px !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 762px) {
   .menu a:not(:first-child), .dropdown .dropbtn{
     display: none;
   }
@@ -207,7 +207,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 762px) {
   .menu.responsive {
     position: relative;
   }
@@ -239,7 +239,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 762px) {
   .icon {
     display: none;
   }
@@ -326,7 +326,7 @@ h1:hover + p + div + p {
   width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 762px) {
   .wrapper {
     width: 800px;
     margin: 0 auto;
@@ -373,7 +373,7 @@ article ul li {
   margin-bottom: 1px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 762px) {
   h2 {
     font-size: 16px;
     margin: 40px 20px;
@@ -386,5 +386,28 @@ article ul li {
 
   .description {
     margin-bottom: 20px;
+  }
+}
+
+/*pag3*/
+
+.gallery-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.gallery-img {
+  margin: 10px;
+  flex-basis: 80%;
+}
+
+.gallery-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px) {
+  .gallery-img {
+    flex-basis: 300px;
   }
 }
