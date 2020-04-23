@@ -411,3 +411,23 @@ article ul li {
     flex-basis: 300px;
   }
 }
+
+/*404*/
+
+.erro-art {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.erro-h {
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 100px;
+}
+
+.erro-p {
+  text-align: center;
+  font-size: 30px;
+}
