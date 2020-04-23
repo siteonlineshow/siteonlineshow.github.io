@@ -125,6 +125,9 @@ header {
 
 .menu {
   overflow: hidden;
+  position: fixed;
+  background-color: #00e8ff;
+  width: 100%;
 }
 
 .menu a {
@@ -192,6 +195,10 @@ header {
   padding: 35px 20px !important;
 }
 
+.mobile-space {
+  height: 70px;
+}
+
 @media screen and (max-width: 762px) {
   .menu a:not(:first-child), .dropdown .dropbtn{
     display: none;
@@ -241,6 +248,10 @@ header {
 
 @media only screen and (min-width: 762px) {
   .icon {
+    display: none;
+  }
+
+  .mobile-space {
     display: none;
   }
 }
