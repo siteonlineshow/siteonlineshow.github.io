@@ -108,6 +108,9 @@ input, select {
 body {
   background-color: #ff66ff;
   font-family: arial;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /*HEADER*/
@@ -139,13 +142,18 @@ header {
 }
 
 .menu a:hover, .dropdown:hover .dropbtn {
-  color: #0085ff;
+  color: #007eff;
   background-color: yellow;
 }
 
 .dropdown {
   float: left;
   overflow: hidden;
+}
+
+.dropbtn i {
+  margin-left: 2px;
+  color: #007eff;
 }
 
 .dropdown .dropbtn {
@@ -274,6 +282,47 @@ header {
 
 .banner-word {
   padding: 0 20px;
+}
+
+/*FOOTER*/
+
+.container {
+  flex: 1;
+}
+
+.foot {
+  background-color: #00e8ff;
+  height: 100%;
+}
+
+.wrapper-foot {
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.wrapper-foot ul {
+  list-style: none;
+}
+
+.wrapper-foot ul li {
+  line-height: 20px;
+  font-size: 17px;
+}
+
+.foot-sm a {
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.foot-sm a i {
+  font-size: 25px;
+  margin: 0 1px;
+  color: black;
 }
 
 /*INDEX*/
