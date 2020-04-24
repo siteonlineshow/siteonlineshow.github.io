@@ -104,6 +104,10 @@ input, select {
 
 /*MY CODE*/
 
+::selection {
+  background-color: #f77dff;
+}
+
 
 body {
   background-color: #ff66ff;
@@ -273,7 +277,7 @@ header {
 
 .banner-name {
   text-align: center;
-  line-height: 150px;
+  padding-top: 55px;
   font-size: 40px;
   font-family: 'Lobster', cursive;
   font-weight: 400;
