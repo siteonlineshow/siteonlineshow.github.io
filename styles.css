@@ -104,6 +104,10 @@ input, select {
 
 /*MY CODE*/
 
+::-moz-selection {
+  background-color: #f77dff;
+}
+
 ::selection {
   background-color: #f77dff;
 }
