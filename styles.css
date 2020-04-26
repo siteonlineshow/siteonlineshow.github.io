@@ -495,9 +495,11 @@ article ul li {
   font-size: 60px;
   font-weight: 100;
   margin-bottom: 100px;
+  font-family: monospace;
 }
 
 .erro-p {
   text-align: center;
   font-size: 30px;
+  font-family: monospace;
 }
