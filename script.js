@@ -6,3 +6,18 @@ function myFunction() {
     x.className = "menu";
   }
 }
+
+function troca() {
+  var x = document.getElementById("muda");
+  if (x.innerHTML === "FAQ") {
+    x.innerHTML = "segredo, não conta";
+  } else {
+    x.innerHTML = "FAQ";
+  }
+  var y = document.getElementById("muda");
+  if (y.style.color == "blue") {
+    y.style.color = "black";
+  } else {
+    y.style.color = "blue";
+  }
+}

@@ -320,6 +320,9 @@ header {
 .wrapper-foot ul li {
   line-height: 20px;
   font-size: 17px;
+  color: black;
+  -webkit-user-select:none;
+  cursor:text
 }
 
 .foot-sm a {
