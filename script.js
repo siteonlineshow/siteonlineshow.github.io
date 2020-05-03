@@ -10,7 +10,7 @@ function myFunction() {
 function troca() {
   var x = document.getElementById("muda");
   if (x.innerHTML === "FAQ") {
-    x.innerHTML = "segredo, não conta";
+    x.innerHTML = "isso é segredo, não conta";
   } else {
     x.innerHTML = "FAQ";
   }
