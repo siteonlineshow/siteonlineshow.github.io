@@ -520,6 +520,7 @@ article ul li {
   perspective: 600;
   align-items: center;
   justify-content: center;
+  --cor-lado: #0e2f4a;
 }
 
 .cubo {
@@ -548,31 +549,31 @@ article ul li {
 }
 
 .lado.frente {
-  background-color: #0e2f4a;
+  background-color: var(--cor-lado);
   transform: translateZ(100px);
 }
 
 .lado.direita {
-  background-color: #0e2f4a;
+  background-color: var(--cor-lado);
   transform: translateX(100px) rotateY(90deg);
 }
 
 .lado.esquerda {
-  background-color: #0e2f4a;
+  background-color: var(--cor-lado);
   transform: translateX(-100px) rotateY(-90deg);
 }
 
 .lado.tras {
-  background-color: #0e2f4a;
+  background-color: var(--cor-lado);
   transform: translateZ(-100px) rotateY(180deg);
 }
 
 .lado.cima {
-  background-color: #0e2f4a;
+  background-color: var(--cor-lado);
   transform: rotateX(90deg) translateZ(100px);
 }
 
 .lado.baixo {
-  background-color: #0e2f4a;
+  background-color: var(--cor-lado);
   transform: rotateX(-90deg) translateZ(100px);
 }
