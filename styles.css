@@ -175,7 +175,7 @@ body {
   display: none;
   position: absolute;
   background-color: #50c7fb;
-  min-width: 160px;
+  min-width: 134px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
