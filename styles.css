@@ -530,6 +530,20 @@ select, .botão-mat {
   }
 }
 
+/*pag4*/
+
+.jogo-titulo {
+  margin-top: 120px;
+  text-align: center;
+}
+
+canvas {
+  background: #3a3a3a !important;
+  display: block !important;
+  margin: 0px auto !important;
+  margin-top: 40px !important;
+  border: 1px solid black !important}
+
 /*404*/
 
 .erro-art {
