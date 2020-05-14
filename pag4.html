@@ -31,7 +31,7 @@
       </nav>
     </header>
     <main>
-      <h3 class="jogo-titulo">Só 1 chance (a não ser que não)<br>E não tem fim também</h3>
+      <h3 class="jogo-titulo">Jogo Todo Torto<br>é engraçado quando a bolinha bate nas coisa<br>e ele meio que não acaba também</h3>
       <canvas id="myCanvas" width="480" height="320"></canvas>
     </main>
     <div class="container"></div>
@@ -130,12 +130,24 @@
         ctx.fillStyle = "#00c9ff";
         ctx.fill();
         ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+        ctx.fillStyle = "black";
+        ctx.stroke();
+        ctx.closePath();
     }
     function drawPaddle() {
         ctx.beginPath();
         ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
         ctx.fillStyle = "#0095DD";
         ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+        ctx.fillStyle = "black";
+        ctx.stroke();
         ctx.closePath();
     }
     function drawBricks() {
@@ -150,6 +162,12 @@
                     ctx.rect(brickX, brickY, brickWidth, brickHeight);
                     ctx.fillStyle = "#d23434";
                     ctx.fill();
+                    ctx.closePath();
+
+                    ctx.beginPath();
+                    ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                    ctx.fillStyle = "black";
+                    ctx.stroke();
                     ctx.closePath();
                 }
             }
