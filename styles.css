@@ -561,7 +561,8 @@ select, .botão-mat {
     display: block !important;
     margin: 0px auto !important;
     margin-top: 40px !important;
-    border: 1px solid black !important}
+    border: 1px solid black !important
+  }
 }
 
 @media only screen and (max-width: 762px) {
