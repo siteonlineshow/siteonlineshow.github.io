@@ -224,6 +224,10 @@ body {
   header {
     height: auto;
   }
+
+  .homemmorcego {
+    background-color: #00e8ff;
+  }
 }
 
 @media screen and (max-width: 762px) {
