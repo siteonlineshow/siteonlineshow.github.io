@@ -527,7 +527,10 @@ select, .botão-mat {
 }
 
 #resultado {
-  margin: 15px 0;
+  margin: 10px 0 10px 5px;
+  background-color: #ff66ff;
+  width: 205px;
+  padding: 6px 10px;
 }
 
 /*pag3*/
