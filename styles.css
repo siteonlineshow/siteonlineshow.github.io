@@ -704,7 +704,7 @@ select, .botão-mat {
 }
 
 .a1 {
-  background: green;
+  background: #efff00;
 }
 
 .a1:hover {
@@ -714,7 +714,7 @@ select, .botão-mat {
 }
 
 .a2 {
-  background: blue;
+  background: #003fef;
 }
 
 .a2:hover {
