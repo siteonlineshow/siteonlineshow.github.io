@@ -696,6 +696,7 @@ select, .botão-mat {
   width: 200px;
   height: 200px;
   flex: 1;
+  display: flex;
 }
 
 .a1 {
@@ -716,4 +717,18 @@ select, .botão-mat {
 
 .a5{
   background: black
+}
+
+.audio div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: black;
+}
+
+.audio div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
