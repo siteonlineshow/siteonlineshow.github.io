@@ -680,47 +680,77 @@ select, .botão-mat {
 }
 
 .audio-container {
-  display: flex;
-  flex-direction: column;
-  -ms-align-items: center;
-  align-items: center;
 }
 
 .audio {
-  width: 100%;
   display: flex;
 }
 
 .audio > div {
-  width: 200px;
-  height: 200px;
   flex: 1;
   display: flex;
 }
 
+.aud {
+  flex: 1;
+  margin: 1%;
+  border-radius: 50%;
+}
+
+.aud:before {
+  content: "";
+  display: inline-block;
+  padding-top: 100%;
+}
+
 .a1 {
   background: green;
-  border-radius: 50%
+}
+
+.a1:hover {
+  background:rgba(255, 102, 255, 0.3);
+  -webkit-transition: 0.3 ease;
+  transition: 0.3s ease
 }
 
 .a2 {
   background: blue;
-  border-radius: 50%
+}
+
+.a2:hover {
+  background:rgba(255, 102, 255, 0.3);
+  -webkit-transition: 0.3 ease;
+  transition: 0.3s ease
 }
 
 .a3 {
   background: red;
-  border-radius: 50%
+}
+
+.a3:hover {
+  background:rgba(255, 102, 255, 0.3);
+  -webkit-transition: 0.3 ease;
+  transition: 0.3s ease
 }
 
 .a4 {
   background: white;
-  border-radius: 50%
+}
+
+.a4:hover {
+  background:rgba(255, 102, 255, 0.3);
+  -webkit-transition: 0.3 ease;
+  transition: 0.3s ease
 }
 
 .a5{
   background: black;
-  border-radius: 50%
+}
+
+.a5:hover {
+  background:rgba(255, 102, 255, 0.3);
+  -webkit-transition: 0.3 ease;
+  transition: 0.3s ease
 }
 
 .audio div p {
