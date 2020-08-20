@@ -42,3 +42,21 @@ function calculadora() {
 
   document.querySelector("#resultado").innerHTML = calcular;
 }
+
+
+function contrasena() {
+  let formSenha = document.getElementById('sena').value;
+
+  if (formSenha == 'oi amigo') {
+    let anchor = document.createElement('a');
+    let texto = document.createTextNode('acertou haha');
+
+    anchor.appendChild(texto);
+    anchor.href = 'audios.html';
+
+    document.getElementById('respostaForm').appendChild(anchor)
+  }
+  else {
+    document.getElementById('senha-errada').innerHTML = '. . .'
+  }
+}

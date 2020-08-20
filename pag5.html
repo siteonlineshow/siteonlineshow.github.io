@@ -39,8 +39,12 @@
         <article>
           <h1>Diga La Contraseña</h1>
           <form>
-            <input type="text" name="bobãodisse" style="width: 100%; margin-top: 50px">
+            <input type="text" name="bobãodisse" id='sena' style="width: 100%; margin-top: 50px">
+            <button type="button" name="enviaSenha" onclick="contrasena()">Enviar</button>
           </form>
+          <div id="respostaForm">
+            <p id='senha-errada'></p>
+          </div>
         </article>
       </div>
     </main>
@@ -69,5 +73,7 @@
         </div>
       </div>
     </footer>
+
+  <script src="script.js"></script>
   </body>
 </html>
