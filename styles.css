@@ -669,3 +669,51 @@ select, .botão-mat {
   background-color: var(--cor-lado);
   transform: rotateX(-90deg) translateZ(100px);
 }
+
+/*Audios*/
+
+@media only screen and (min-width: 762px) {
+  .wrapper2 {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.audio {
+  background: yellow;
+  width: 100%;
+  display: flex;
+}
+
+.audio > div {
+  width: 200px;
+  height: 200px;
+  flex: 1;
+}
+
+.a1 {
+  background: green;
+}
+
+.a2 {
+  background: blue;
+}
+
+.a3 {
+  background: red
+}
+
+.a4 {
+  background: white
+}
+
+.a5{
+  background: black
+}
