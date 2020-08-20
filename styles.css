@@ -687,7 +687,6 @@ select, .botão-mat {
 }
 
 .audio {
-  background: yellow;
   width: 100%;
   display: flex;
 }
@@ -701,22 +700,27 @@ select, .botão-mat {
 
 .a1 {
   background: green;
+  border-radius: 50%
 }
 
 .a2 {
   background: blue;
+  border-radius: 50%
 }
 
 .a3 {
-  background: red
+  background: red;
+  border-radius: 50%
 }
 
 .a4 {
-  background: white
+  background: white;
+  border-radius: 50%
 }
 
 .a5{
-  background: black
+  background: black;
+  border-radius: 50%
 }
 
 .audio div p {
