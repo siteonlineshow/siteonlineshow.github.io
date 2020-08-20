@@ -780,7 +780,19 @@ select, .botão-mat {
 
 .buttSend {
   border: 0;
-  background-color: #f899ff;
+  background-color: #44eeff;
   line-height: 25px;
   margin: 10px 10px 10px 0;
+}
+
+#sena {
+  background-color: #44eeff
+}
+
+.blu {
+  background-color: #00e8ff
+}
+
+.pinc {
+  background-color: #ff66ff;
 }
