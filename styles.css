@@ -777,3 +777,10 @@ select, .botão-mat {
   align-items: center;
   justify-content: center;
 }
+
+.buttSend {
+  border: 0;
+  background-color: #f899ff;
+  line-height: 25px;
+  margin: 10px 10px 10px 0;
+}

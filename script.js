@@ -53,6 +53,8 @@ function contrasena() {
 
     anchor.appendChild(texto);
     anchor.href = 'audios.html';
+    anchor.style.textAlign = 'center'
+    anchor.style.textDecoration = 'none'
 
     document.getElementById('respostaForm').appendChild(anchor)
   }
