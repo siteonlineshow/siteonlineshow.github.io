@@ -1,0 +1,367 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*MY CODE*/
+
+::-moz-selection {
+  background-color: #f77dff;
+}
+
+::selection {
+  background-color: #f77dff;
+}
+
+
+body {
+  background-color: #ff66ff;
+  font-family: arial;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*HEADER*/
+
+.active {
+  background-color: #ffbeff;
+  color: #3b3b3b
+}
+
+.menu {
+  position: fixed;
+  background-color: #00e8ff;
+  width: 100%;
+  height: 70px;
+}
+
+.menu a {
+  float: left;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding: 27px 20px;
+  text-decoration: none;
+}
+
+.menu a:hover, .dropdown:hover .dropbtn {
+  color: #007eff;
+  background-color: yellow;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn i {
+  margin-left: 2px;
+  color: #007eff;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 25px 20px 9px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+  padding-bottom: 27px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #50c7fb;
+  min-width: 134px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: inherit;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: yellow
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.index-menu {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px #ff55ff;
+  font-size: 30px !important;
+  line-height: 0;
+  padding: 35px 20px !important;
+}
+
+.mobile-space {
+  height: 70px;
+}
+
+@media screen and (max-width: 762px) {
+  .menu a:not(:first-child), .dropdown .dropbtn{
+    display: none;
+  }
+
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .homemmorcego {
+    background-color: #00e8ff;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .menu.responsive {
+    position: relative;
+  }
+
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .menu.responsive .dropdown {
+    float: none;
+  }
+
+  .menu.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .menu.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 762px) {
+  .icon {
+    display: none;
+  }
+
+  .mobile-space {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 762px) {
+  .dropdown, .link-batman {
+    background-color: #00e8ff;
+  }
+
+  .dropdown-content {
+    box-shadow: none;
+  }
+
+  a.icon {
+    padding-bottom: 28px;
+  }
+}
+
+/*BANNER*/
+
+.banner-back {
+  width: 100%;
+  height: 150px;
+  background-color: #f88fff;
+}
+
+.banner-name {
+  text-align: center;
+  padding-top: 55px;
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px #ff55ff;
+}
+
+@media only screen and (min-width: 762px) {
+  .banner-name {
+    margin-top: 70px;
+  }
+}
+
+/*FOOTER*/
+
+.container {
+  flex: 1;
+}
+
+.foot {
+  background-color: #00e8ff;
+  height: 100%;
+}
+
+.wrapper-foot {
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.wrapper-foot ul {
+  list-style: none;
+}
+
+.wrapper-foot ul li {
+  line-height: 20px;
+  font-size: 17px;
+  color: black;
+  -webkit-user-select:none;
+  cursor:text
+}
+
+.foot-sm a {
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.foot-sm a i {
+  font-size: 25px;
+  margin: 0 1px;
+  color: black;
+}
+
+/*The Cool Nice Good Incredible Awesome Wow It's So Good Really Game*/
+
+#game {
+  border: 1px solid black;
+  height: 350px;
+  width: 700px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 80px;
+  border: 1px solid black;
+  overflow: hidden;
+}

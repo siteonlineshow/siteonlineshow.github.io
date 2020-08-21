@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Arte</title>
+    <title>outrojogo.html</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="circle.png">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gamestyles.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/68e1a1f96e.js" crossorigin="anonymous"></script>
   </head>
@@ -21,12 +21,12 @@
             </button>
             <div class="dropdown-content">
               <a href="pag2.html">Ciência</a>
-              <a href="pag3.html" class="active">Arte</a>
+              <a href="pag3.html">Arte</a>
               <a href="game1.html">Jogo</a>
               <a href="pag5.html">? ? ?</a>
             </div>
           </div>
-          <a href="https://thirh.github.io/" target="_blank" class="homemmorcego">LEGO Batman 3</a>
+          <a href="https://thirh.github.io/" target="_blank">LEGO Batman 3</a>
           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
       </nav>
@@ -36,28 +36,8 @@
         <button type="button" class="estado-site" onclick="alert('Site Incompleto')">Estado Atual do Site</button>
       </div>
       <div class="wrapper">
-          <h1>A R T E</h1>
+        <canvas id="game"></canvas>
       </div>
-      <section class="gallery-links">
-        <a href="#" class="gallery-img">
-          <img src="pato.jpg" alt="pato galeria">
-        </a>
-        <a href="#" class="gallery-img">
-          <img src="pato.jpg" alt="pato galeria">
-        </a>
-        <a href="#" class="gallery-img">
-          <img src="pato.jpg" alt="pato galeria">
-        </a>
-        <a href="#" class="gallery-img">
-          <img src="pato.jpg" alt="pato galeria">
-        </a>
-        <a href="#" class="gallery-img">
-          <img src="pato.jpg" alt="pato galeria">
-        </a>
-        <a href="#" class="gallery-img">
-          <img src="pato.jpg" alt="pato galeria">
-        </a>
-      </section>
     </main>
     <div class="container"></div>
     <footer>
@@ -84,5 +64,70 @@
         </div>
       </div>
     </footer>
+    <script>
+    var canvas = document.getElementById("game");
+    var ctx = canvas.getContext("2d");
+
+    var x = 285;
+
+
+    document.addEventListener("click", mouseClick, false);
+
+
+
+    function mouseClick() {
+      ctx.beginPath();
+      ctx.rect(0, 70, 30, 40);
+      ctx.fillStyle = "#9d00ff";
+      ctx.fill();
+      ctx.closePath()
+    }
+
+    function drawDino() {
+      ctx.beginPath();
+      ctx.rect(0, 90, 30, 40);
+      ctx.fillStyle = "#9d00ff";
+      ctx.fill();
+      ctx.closePath()
+    }
+
+    function drawCacto() {
+      ctx.beginPath();
+      ctx.rect(x, 115, 15, 15);
+      ctx.fillStyle = "#08d608";
+      ctx.fill();
+      ctx.closePath()
+    }
+
+    function drawPaisagem() {
+      ctx.beginPath();
+      ctx.rect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#60f1ff";
+      ctx.fill();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.rect(0, 130, canvas.width, 20);
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.rect(0, 0, 20, 20);
+      ctx.fillStyle = "yellow";
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function draw() {
+      drawPaisagem();
+      drawCacto();
+      drawDino();
+
+      x = x-1;
+    }
+
+    var interval = setInterval(draw, 10)
+    </script>
   </body>
 </html>
