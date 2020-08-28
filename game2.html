@@ -82,12 +82,14 @@
         ctx.closePath()
       },
       newPos: function() {
-        if (this.y < 30) {
-          this.speedY = 2
+        if (this.jumping = true && this.y < 30) {
+          this.speedY = 2;
+
         }
         this.y = this.y + this.speedY;
         if (this.speedY == 2 && this.y == 90) {
-          this.speedY = 0
+          this.speedY = 0;
+          return this.jumping = false
         }
       }
     }
@@ -110,16 +112,10 @@
 
 
     function pulo() {
-      dinoPlayer.speedY -= 2
+      dinoPlayer.speedY -= 2;
+      return dinoPlayer.jumping = true
     }
 
-    function mouseClick() {
-      ctx.beginPath();
-      ctx.rect(0, 70, 30, 40);
-      ctx.fillStyle = "#9d00ff";
-      ctx.fill();
-      ctx.closePath()
-    }
 
     function drawPaisagem() {
       ctx.beginPath();
