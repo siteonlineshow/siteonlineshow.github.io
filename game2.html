@@ -82,8 +82,8 @@
         ctx.closePath()
       },
       newPos: function() {
-        if (this.y < 70) {
-          speedY = 2
+        if (this.y < 30) {
+          this.speedY = 2
         }
         this.y = this.y + this.speedY;
         if (this.speedY == 2 && this.y == 90) {
@@ -141,17 +141,25 @@
       ctx.closePath();
     }
 
+    let spawnTimer = 50;
+
     function draw() {
       drawPaisagem();
-      cactoMal.cactosenho();
       dinoPlayer.dinosenho();
 
-      cactoMal.x = cactoMal.x - 1;
+      cactoMal.x = cactoMal.x - 1.5;
 
       dinoPlayer.newPos();
+      cactoMal.cactosenho();
+
+      spawnTimer--;
+
+      if (spawnTimer == 0) {
+      spawnTimer = 50
+      }
     }
 
-    var interval = setInterval(draw, 10)
+    let interval = setInterval(draw, 10)
     </script>
   </body>
 </html>
