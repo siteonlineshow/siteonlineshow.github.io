@@ -58,6 +58,17 @@ function contrasena() {
 
     document.getElementById('respostaForm').appendChild(anchor)
   }
+  else if (formSenha == 'amigo secreto') {
+      let ancora = document.createElement('a');
+      let textin = document.createTextNode('o amigo que é um segredo');
+
+      ancora.appendChild(textin);
+      ancora.href = 'bellyAmiga.html';
+      ancora.style.textAlign = 'center'
+      ancora.style.textDecoration = 'none'
+
+      document.getElementById('respostaForm').appendChild(ancora)
+  }
   else {
     document.getElementById('senha-errada').innerHTML = '. . .'
   }
